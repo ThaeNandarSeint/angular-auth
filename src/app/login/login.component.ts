@@ -16,7 +16,7 @@ export class LoginComponent {
     private _authService: AuthService,
     private _router: Router
   ) {
-
+    sessionStorage.clear()
   }
 
   loginForm = this._builder.group({

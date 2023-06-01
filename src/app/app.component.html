@@ -303,7 +303,7 @@
 </style>
 
 <!-- Toolbar -->
-<!-- <div class="toolbar" *ngIf="isMenuVisible" role="banner">
+<div class="toolbar" *ngIf="isMenuRequired" role="banner" style="background-color: #24292e;">
   <img
     width="40"
     alt="Angular Logo"
@@ -311,12 +311,12 @@
   />
   <span>Welcome</span>
   <a routerLink="">Home</a>
-  <a *ngIf="isadmin" routerLink="/user">User</a>
+  <a routerLink="/user">User</a>
   <a routerLink="/customer">Customer</a>
     <div class="spacer"></div>
     
     <a routerLink="/login">Logout</a>
-</div> -->
+</div>
 
 <div class="content" style="width: 100%;display: block;" role="main">
   <router-outlet></router-outlet>
@@ -329,3 +329,4 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+

@@ -27,4 +27,12 @@ export class AuthService {
   updateUser(id: any, data: any){
     return this._http.put(`${this.apiUrl}/${id}`, data)
   }
+
+  isLoggedIn(){
+    return sessionStorage.getItem('id') !== null
+  }
+
+  getUserRole(){
+    return sessionStorage.getItem('role') !== null ? sessionStorage.getItem('role')?.toString() : ""
+  }
 }
