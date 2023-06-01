@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "name": "Superadmin",
+      "email": "superadmin@gmail.com",
+      "password": "Wang1bo@thae",
+      "gender": "male",
+      "role": "superadmin",
+      "isactive": true,
+      "id": 1
+    },
+    {
+      "name": "Normal User",
+      "email": "normaluser@gmail.com",
+      "password": "Wang1bo@thae",
+      "gender": "female",
+      "role": "",
+      "isactive": false,
+      "id": 2
+    }
+  ]
+}
